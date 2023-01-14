@@ -21,7 +21,8 @@ Create a new snippet...
 ```bash
 $ curl -i -X GET http://localhost:4000/snippet/create
 HTTP/1.1 405 Method Not Allowed
-Date: Sat, 14 Jan 2023 20:57:00 GMT
+Allow: POST
+Date: Sat, 14 Jan 2023 21:04:56 GMT
 Content-Length: 18
 Content-Type: text/plain; charset=utf-8
 
