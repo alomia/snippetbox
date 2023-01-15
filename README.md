@@ -2,11 +2,12 @@
 
 ### Routing requests
 
-| Method | Pattern            | Handler       | Action                     |
-| ------ | ------------------ | ------------- | -------------------------- |
-| ANY    | /                  | home          | Display the home page      |
-| ANY    | /snippet/view?id=1 | snippetView   | Display a specific snippet |
-| POST   | /snippet/create    | snippetCreate | Create a new snippet       |
+| Method | Pattern            | Handler         | Action                       |
+| ------ | ------------------ | --------------- | ---------------------------- |
+| ANY    | /                  | home            | Display the home page        |
+| ANY    | /snippet/view?id=1 | snippetView     | Display a specific snippet   |
+| POST   | /snippet/create    | snippetCreate   | Create a new snippet         |
+| ANY    | /static/           | http.FileServer | Serve a specific static file |
 
 ```bash
 $ curl -i -X POST http://localhost:4000/snippet/create
